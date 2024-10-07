@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply bg-neutral-100 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200 select-none;
+  --nv-z: 10000; /* Notivue z-index */
+}
+
+body {
+  @apply relative overflow-hidden;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+  display: none;
+}
+.overflow-y-auto {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
